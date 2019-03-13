@@ -1,0 +1,30 @@
+{
+    "name": "yakeing/badge",
+    "description": "This is an identification tag based on SVG.",
+    "keywords": ["Badge", "SVG"],
+    "homepage": "https://github.com/yakeing/Badge",
+    "type": "symfony-bundle",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "yakeing",
+            "homepage": "http://weibo.com/yakeing"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+         "phpunit/phpunit": "5.7"
+    },
+    "extra":{
+        "branch-alias":{
+            "dev-master": "2.x-dev"
+        }
+    }
+}
