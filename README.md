@@ -22,9 +22,11 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 - [x] Sample：
 ```php
-    $uid = 12345;
-    $token = X12345;
-    $DP = new Dnspod($uid, $token);
+    $Badge = new Badge();
+    $label = 'label';
+    $message = 'message';
+    $color = '##4c1';
+    $Badge->OutCode($label, $message, $color);
 ```
 
 Donate
