@@ -35,7 +35,7 @@ Your donation makes CODE better.
 
  Bitcoin (比特币赞助)
 
- 396N76o9eJVCPEB7fjAp7RuQUXLs3xVm7D
+ 1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8
 
  ![Bitcoin](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Bitcoin.png)
 
