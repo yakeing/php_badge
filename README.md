@@ -33,7 +33,7 @@ Donate
 ---
 Your donation makes CODE better.
 
- Bitcoin (比特币赞助)
+ [Bitcoin](https://btc.com/1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8) (比特币赞助)
 
  1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8
 
