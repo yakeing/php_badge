@@ -1,6 +1,10 @@
 # Badge
 This is an identification tag based on SVG
 
+### Packagist
+
+[![Version](http://img.shields.io/packagist/v/yakeing/badge.svg)](https://github.com/yakeing/Badge/releases)
+[![Downloads](http://img.shields.io/packagist/dt/yakeing/badge.svg)](https://packagist.org/packages/yakeing/badge)
 
 ### Github
 
