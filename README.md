@@ -37,17 +37,17 @@ Donate
 ---
 Your donation makes CODE better.
 
- [Bitcoin](https://btc.com/1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8) (比特币赞助)
+ [Bitcoin](https://btc.com/1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8)
 
  1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8
 
  ![Bitcoin](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Bitcoin.png)
 
- WeChat (微信赞助)
+ WeChat
 
  ![WeChat](https://raw.githubusercontent.com/yakeing/Content/master/Donate/WeChat.png)
 
- Alipay (支付宝赞助)
+ Alipay
 
  ![Alipay](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Alipay.png)
 
