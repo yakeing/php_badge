@@ -3,12 +3,12 @@
  *  Badge
  *  This is an identification tag based on SVG
  * @author http://weibo.com/yakeing
- * @version 3.5
+ * @version 3.6
  * logo ≥14px
- * 97CA00 绿
- * 8892BF 紫
- * F66000 橙
- * 007EC6 蓝
+ * 97CA00 green
+ * 8892BF purple
+ * F66000 orange
+ * 007EC6 blue
 */
 namespace PhpBadge;
 class Badge{
