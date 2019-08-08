@@ -10,7 +10,7 @@
  * F66000 orange
  * 007EC6 blue
 */
-namespace PhpBadge;
+namespace php_badge;
 class Badge{
 	private $Fillet = 3;
 	private $width = 80;
