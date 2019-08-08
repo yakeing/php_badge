@@ -19,7 +19,7 @@ This is an identification tag based on SVG
 Use [Composer](https://getcomposer.org) to install the library.
 
 ```
-    $ composer require yakeing/badge
+    $ composer require yakeing/php_badge
 ```
 
 ### Initialization parameter
