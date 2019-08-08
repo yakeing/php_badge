@@ -3,16 +3,16 @@ This is an identification tag based on SVG
 
 ### Packagist
 
-[![Version](http://img.shields.io/packagist/v/yakeing/badge.svg)](https://github.com/yakeing/Badge/releases)
-[![Downloads](http://img.shields.io/packagist/dt/yakeing/badge.svg)](https://packagist.org/packages/yakeing/badge)
+[![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
+[![Downloads](http://img.shields.io/packagist/dt/yakeing/php_badge.svg)](https://packagist.org/packages/yakeing/php_badge)
 
 ### Github
 
-[![Downloads](https://img.shields.io/github/downloads/yakeing/Badge/total.svg)](https://github.com/yakeing/Badge)
-[![Size](https://img.shields.io/github/size/yakeing/Badge/src/Badge.php.svg)](https://github.com/yakeing/Badge/blob/master/src/Badge.php)
-[![tag](https://img.shields.io/github/tag/yakeing/Badge.svg)](https://github.com/yakeing/Badge/releases)
-[![Language](https://img.shields.io/github/license/yakeing/Badge.svg)](https://github.com/yakeing/Badge/blob/master/LICENSE)
-[![Php](https://img.shields.io/github/languages/top/yakeing/Badge.svg)](https://github.com/yakeing/Badge)
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
+[![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
+[![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
+[![Language](https://img.shields.io/github/license/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
+[![Php](https://img.shields.io/github/languages/top/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge)
 
 ### Installation
 
