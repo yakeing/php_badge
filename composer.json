@@ -1,8 +1,8 @@
 {
-    "name": "yakeing/badge",
+    "name": "yakeing/php_badge",
     "description": "This is an identification tag based on SVG.",
     "keywords": ["Badge", "SVG"],
-    "homepage": "https://github.com/yakeing/Badge",
+    "homepage": "https://github.com/yakeing/php_badge",
     "type": "symfony-bundle",
     "license": "MPL-2.0",
     "authors": [
@@ -12,8 +12,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "": "src/"
+        "psr-4": {
+            "php_badge\\": "src/"
         }
     },
     "require": {
