@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="20">
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+        <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="a">
+        <rect width="141" height="20" rx="3" fill="#fff"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        <path fill="#44CC11" d="M0 0h39v20H0z"/><path fill="#F0CE1A" d="M39 0h52v20H39z"/><path fill="#A0ABFC" d="M91 0h50v20H91z"/>
+        <path fill="url(#b)" d="M0 0h 141v20H0z"/>
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif,Microsoft YaHei" font-size="110">
+       <text x="195" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="290">state</text><text x="195" y="140" transform="scale(.1)" textLength="290">state</text><text x="640" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="420">staging</text><text x="640" y="140" transform="scale(.1)" textLength="420">staging</text><text x="1140" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="400">testing</text><text x="1140" y="140" transform="scale(.1)" textLength="400">testing</text>
+    </g>
+</svg>
