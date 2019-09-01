@@ -27,7 +27,7 @@ class php_badgeTest extends TestCase{
         array('build', '555'), //#555555
         array('passing', '4C1'), //#44CC11
     );
-    $Badge->$SimplexmlNo = true; //Simplexml Svg
+    $Badge->SimplexmlNo = true; //Simplexml Svg
     ob_start();
       $Badge->svg($CI);
     $ob_CI = ob_get_contents();
