@@ -27,7 +27,10 @@ deploy:
   api_key:
     secure: ${GITHUB_TOKEN}
   file_glob: true
-  file: /tmp/Core.tar.gz
+  file:
+    - /tmp/Core.tar.gz
+    - /tmp/DB.svg
+    - /tmp/CI.svg
   skip_cleanup: true
   on:
     tags: true
