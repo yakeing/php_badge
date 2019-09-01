@@ -3,91 +3,171 @@
  *  Badge
  *  This is an identification tag based on SVG
  * @author http://weibo.com/yakeing
- * @version 3.6
+ * @version 4.0
  * logo ≥14px
  * 97CA00 green
  * 8892BF purple
  * F66000 orange
  * 007EC6 blue
+
+ 1024x768或800x600等标准的分辨率计算出来的dpi是一个常数：96
+ ===================================================
+    1英寸=72磅,1磅=1/72英寸
+    9磅(96) = 9*1/72=1/8 inch
 */
 namespace php_badge;
 class Badge{
-	private $Fillet = 3;
-	private $width = 80;
-	private $height = 20;
-	private $font_size = 11;
-	private $font_family = "DejaVu Sans,Verdana,Geneva,sans-serif,Microsoft YaHei";
-	private $stop_color = "#bbb"; //Linear progressive changing color
-	private $text_x_shade = 0.5; //Font shadow X Offset
-	private $text_y_shade = 1; //Font shadow Y Offset
-	private $rect_arr = array(); //Base map Multidimensional Arrays [['x'=>0, 'color'=>10],...]
-	private $text = array(); //Text Multidimensional Arrays [['x'=>10, 'y'=>10, 'color'=>10, 'text'=>'1.0'],...]
 
-	//Print image
-	public function SvgIcon($color1, $text1, $color2, $text2){
-		$t1 = $this->StrCount($text1);
-		$t2 = $this->StrCount($text2);
-		$daub = array(
-			array('width'=>0, 'x'=>0, 'color'=>'#'.$color1),
-			array('width'=>8+$t2, 'x'=>8+$t1, 'p'=>4, 'color'=>'#'.$color2)
-		);
-		$text = array(
-			array('x'=>3+$t1/2, 'y'=>14, 'color'=>"#EEF", 'text'=>$text1),
-			array('x'=>12+$t1+$t2/2, 'y'=>14, 'color'=>"#010101", 'text'=>$text2)
-		);
-		$this->width = 16+$t1+$t2;
-		$this->Parameter($daub, $text);
-	} //END SvgIcon
+    public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
+    public $imageFontFile = 'DejaVu Sans.ttf'; //font file path
+    public $SimplexmlNo = false; //Simplexml Svg
 
-	//Custom parameter
-	public function Parameter($daub, $text){
-		$this->daub = $daub;
-		$this->text = $text;
-	} //END Parameter
+    private $imageFontSize = 8; //image font size
+    private $svgFontSize = 110; //svg font size
+    private $svgFontFamily = "DejaVu Sans,Verdana,Geneva,sans-serif,Microsoft YaHei"; //svg font family
 
-	//Statistical string
-	private function StrCount($str){
-		$PxSize = 7; //Pixel size
-		$AllLen = strlen($str);
-		$ZhLen = preg_match_all('/[\x{4e00}-\x{9fa5}]/u', $str); //-3.9px Chinese
-		$UpperLen = preg_match_all('/[A-Z]/', $str); //8px uppercase letter
-		//$LowerLen = preg_match_all('/[a-z]/', $str); //7px Lower case letters
-		return ($PxSize*$AllLen)+$UpperLen-($ZhLen*9.99);
-	} //END StrCount
+    //construct
+    public function svg($str){
+        if(!is_file($this->imageFontFile)){
+            exit("string");
+        }
+        if(!is_array($str)){
+            $str = array(array((string)$str, '44CC11'));
+        }
+        $data = $this->GenerateData($str);
+        if(true === $this->SimplexmlNo){
+            $svg = $this->SimplexmlSvg($data);
+        }else{
+            $svg = $this->Assembly($data);
+        }
+        $this->Output($svg);
+    } //END
 
-	//Assembly
-	private function Svg(){
-		$rect = '';
-		$width= $this->width;
-		foreach ($this->daub as $key => $value){
-			$path = '';
-			if ($key !== 0) {
-				$width =  $value['width'];
-				$path .= '<path fill="'.$value['color'].'" d="M'.$value['x'].' 0h'.$value['p'].'v'.$this->height.'h-'.$value['p'].'z"/>';
-			}
-			$rect .= '<rect rx="'.$this->Fillet.'" x="'.$value['x'].'" width="'.$width.'" height="'.$this->height.'" fill="'.$value['color'].'"/>'.$path;
-		}
-		$rect .= '<rect rx="'.$this->Fillet.'" width="'.$this->width.'" height="'.$this->height.'" fill="url(#a)"/>';
-		$g_text = '';
-		foreach ($this->text as $v) {
-			$g_text .= '<text x="'.($v['x']+$this->text_x_shade).'" y="'.($v['y']+$this->text_y_shade).'" fill="'.$v['color'].'" fill-opacity=".3">'.$v['text'].'</text>';
-			$g_text .= '<text x="'.$v['x'].'" y="'.$v['y'].'">'.$v['text'].'</text>';
-		}
-		$g = '<g fill="#fff" text-anchor="middle" font-family="'.$this->font_family.'" font-size="'.$this->font_size.'">';
-		$g .= $g_text;
-		$g .= '</g>';
-		$linearGradient = '<linearGradient id="a" x2="0" y2="100%">';
-		$linearGradient .= '<stop offset="0" stop-color="'.$this->stop_color.'" stop-opacity=".1"/>';
-		$linearGradient .= '<stop offset="1" stop-opacity=".1"/>';
-		$linearGradient .= '</linearGradient>';
-		return '<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="'.$this->width.'" height="'.$this->height.'">'.$linearGradient.$rect.$g.'</svg>';
-	}
+    //Generate Data
+    //array('Version','007ec6',  '40')
+    private function GenerateData($str){
+        $data = array();
+        foreach ($str as $v){
+            $len = strlen($v[0]);
+            $NonEnglish = preg_match_all($this->NonEnglishReg, $v[0]);
+            $imageWidth = imagettfbbox($this->imageFontSize, 0, $this->imageFontFile, $v[0]);
+            $wx = abs($imageWidth[4] - $imageWidth[0])+($NonEnglish*5)+1;
+            if(($len%2 == 0)){
+                --$wx; //even
+            }else{
+                ++$wx; //odd
+            }
+            $data[] = array($v[0], $v[1], $wx);
+        }
+        return $data;
+    } //END
 
-	//Output code
-	public function Out(){
-		header('Content-Disposition: inline; filename="image.svg"');
-		header ('Cache-Control: max-age=604800,public');
-		header('Content-Type: image/svg+xml');
-		echo $this->Svg();
-	} //END Out
+    //simplexml Svg
+    private function SimplexmlSvg($data){
+        $string ='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>';
+        $svg = simplexml_load_string($string);
+        $svg->addAttribute('height', '20');
+        $linearGradient = $svg->addChild('linearGradient');
+        $linearGradient->addAttribute('id', 'b');
+        $linearGradient->addAttribute('x2', '0');
+        $linearGradient->addAttribute('y2', '100%');
+            $stop = $linearGradient->addChild('stop');
+            $stop->addAttribute('offset', '0');
+            $stop->addAttribute('stop-color', '#bbb');
+            $stop->addAttribute('stop-opacity', '.1');
+            $stop = $linearGradient->addChild('stop');
+            $stop->addAttribute('offset', '1');
+            $stop->addAttribute('stop-opacity', '.1');
+        $clipPath = $svg->addChild('clipPath');
+        $clipPath->addAttribute('id', 'a');
+            $rect = $clipPath->addChild('rect');
+            $rect->addAttribute('height', '20');
+            $rect->addAttribute('rx', '3');
+            $rect->addAttribute('fill', '#fff');
+        $gPath = $svg->addChild('g');
+        $gPath->addAttribute('clip-path', 'url(#a)');
+        $gtext = $svg->addChild('g');
+        $gtext->addAttribute('fill', '#fff');
+        $gtext->addAttribute('text-anchor', 'middle');
+        $gtext->addAttribute('font-family',$this->svgFontFamily);//$this->svgFontFamily
+        $gtext->addAttribute('font-size', $this->svgFontSize);//$this->svgFontSize
+        $textLabel = $pathLabel = '';
+        $x = $M = $h = $width = 0;
+        foreach($data as $d){
+            $w = $d[2]+10;
+            $width += $w;
+            $textLength = $d[2]*10;
+            $x += 50+($textLength/2);
+            $h = $w;
+            //---------- path -----------
+            $path = $gPath->addChild('path');
+            $path->addAttribute('fill', '#'.$d[1]);//fill
+            $path->addAttribute('d', 'M'.$M.' 0h'.$h.'v20H'.$M.'z');//$M
+            //------- text ---------
+            $text = $gtext->addChild('text', $d[0]);//str
+            $text->addAttribute('x', $x);//$x
+            $text->addAttribute('y', '150');//150
+            $text->addAttribute('fill', '#010101');
+            $text->addAttribute('fill-opacity', '.3');
+            $text->addAttribute('transform', 'scale(.1)');
+            $text->addAttribute('textLength', $textLength);//$textLength
+            $text = $gtext->addChild('text', $d[0]);//str
+            $text->addAttribute('x', $x);//$x
+            $text->addAttribute('y', '140');//140
+            $text->addAttribute('transform', 'scale(.1)');
+            $text->addAttribute('textLength', $textLength);//$textLength
+            $x += 40+($textLength/2);
+            $M += $h;
+        }
+        $svg->addAttribute('width', $width);//$width
+        $rect->addAttribute('width', $width);//$width
+        $path = $gPath->addChild('path');
+        $path->addAttribute('fill', 'url(#b)');
+        $path->addAttribute('d', 'M0 0h '.$width.'v20H0z');//$width
+    return $svg->asXML();
+    } //END
+
+    //Assembly
+    private function Assembly($data){
+        $textLabel = $pathLabel = '';
+        $x = $M = $h = $width = 0;
+        foreach ($data as $d){
+            $w = $d[2]+10;
+            $width += $w;
+            $textLength = $d[2]*10;
+            $x += 50+($textLength/2);
+            $h = $w;
+            $pathLabel .= '<path fill="#'.$d[1].'" d="M'.$M.' 0h'.$h.'v20H'.$M.'z"/>';
+            $textLabel .= '<text x="'.$x.'" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="'.$textLength.'">'.$d[0].'</text>';
+            $textLabel .= '<text x="'.$x.'" y="140" transform="scale(.1)" textLength="'.$textLength.'">'.$d[0].'</text>';
+            $x += 40+($textLength/2);
+            $M += $h;
+        }
+return <<<EOB
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{$width}" height="20">
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+        <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="a">
+        <rect width="{$width}" height="20" rx="3" fill="#fff"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        {$pathLabel}
+        <path fill="url(#b)" d="M0 0h {$width}v20H0z"/>
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="{$this->svgFontFamily}" font-size="{$this->svgFontSize}">
+       {$textLabel}
+    </g>
+</svg>
+EOB;
+    } //END
+
+    //Output code
+    private function Output($svg){
+        header('Content-Disposition: inline; filename="image.svg"');
+        header ('Cache-Control: max-age=604800,public');
+        header('Content-Type: image/svg+xml');
+        echo $svg;
+    } //END Output
 }
