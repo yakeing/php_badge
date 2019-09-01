@@ -1,0 +1,40 @@
+language: php
+dist: trusty
+sudo: false
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
+
+matrix:
+  fast_finish: true
+
+before_install:
+  #- phpenv config-rm xdebug.ini
+  - travis_retry composer self-update && composer install --no-interaction --prefer-source --dev
+  - tar -zcf /tmp/Core.tar.gz src
+
+script:
+  - phpunit --stderr
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: releases
+  api_key:
+    secure: ${GITHUB_TOKEN}
+  file_glob: true
+  file: /tmp/Core.tar.gz
+  skip_cleanup: true
+  on:
+    tags: true
+
+branches:
+  except:
+  - /^untagged/
+
+after_script:
+  - pwd
