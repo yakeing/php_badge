@@ -35,5 +35,7 @@ class php_badgeTest extends TestCase{
     file_put_contents('/tmp/DB.svg', $ob_DB);
     file_put_contents('/tmp/CI.svg', $ob_CI);
     //$this->assertXmlStringEqualsXmlFile($CIsvg, $ob_CI);
+    $this->assertFileExists('/tmp/DB.svg');
+    $this->assertFileExists('/tmp/CI.svg');
   }
 }
