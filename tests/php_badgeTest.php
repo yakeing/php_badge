@@ -21,7 +21,6 @@ class php_badgeTest extends TestCase{
       $Badge->svg($DB);
     $ob_DB = ob_get_contents();
     ob_end_clean();
-    var_dump($ob_DB);
     //$this->assertXmlStringEqualsXmlFile($DBsvg, $ob_DB);
     //----------- CI --------------//
      $CI = array(
@@ -33,7 +32,8 @@ class php_badgeTest extends TestCase{
       $Badge->svg($CI);
     $ob_CI = ob_get_contents();
     ob_end_clean();
-    var_dump($ob_CI);
+    file_put_contents('/tmp/DB.svg', $DB);
+    file_put_contents('/tmp/CI.svg', $CI);
     //$this->assertXmlStringEqualsXmlFile($CIsvg, $ob_CI);
   }
 }
