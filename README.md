@@ -1,6 +1,14 @@
 # Badge
 This is an identification tag based on SVG
 
+### Travis CI
+
+[![Travis-ci](https://api.travis-ci.org/yakeing/php_badge.svg)](https://travis-ci.org/yakeing/php_badge)
+
+### codecov
+
+[![codecov](https://codecov.io/gh/yakeing/php_badge/branch/master/graph/badge.svg)](https://codecov.io/gh/yakeing/php_badge)
+
 ### Packagist
 
 [![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
@@ -26,11 +34,16 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 - [x] Sample：
 ```php
+
+    $arr = array(
+        array('build', '555'), //#555555
+        array('passing', '4c1'), //#44CC11
+        ..........
+    );
+
     $Badge = new Badge();
-    $label = 'label';
-    $message = 'message';
-    $color = '##4c1';
-    $Badge->OutCode($label, $message, $color);
+    $Badge->svg($arr);
+
 ```
 
 Donate
