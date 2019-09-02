@@ -5,7 +5,7 @@ use php_badge\Badge;
 use PHPUnit\Framework\TestCase;
 class php_badgeTest extends TestCase{
   public function testBadge(){
-    $str = 'php_badge';
+    $str = 'Test';
     $path = dirname(__FILE__);
     $FontFile = $path.'/DejaVu-Sans.ttf'; //font file path
     $DBsvg = $path.'/DB.svg';
