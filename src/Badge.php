@@ -9,17 +9,17 @@
  * 8892BF purple
  * F66000 orange
  * 007EC6 blue
- *
- * 1024x768或800x600等标准的分辨率计算出来的dpi是一个常数：96
- * ===================================================
- *   1英寸=72磅,1磅=1/72英寸
- *   9磅(96) = 9*1/72=1/8 inch
+
+ 1024x768或800x600等标准的分辨率计算出来的dpi是一个常数：96
+ ===================================================
+    1英寸=72磅,1磅=1/72英寸
+    9磅(96) = 9*1/72=1/8 inch
 */
 namespace php_badge;
 class Badge{
 
     public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
-    public $imageFontFile = 'DejaVu Sans.ttf'; //font file path
+    public $imageFontFile = 'DejaVu-Sans.ttf'; //font file path
     public $SimplexmlNo = false; //Simplexml Svg
 
     private $imageFontSize = 8; //image font size
@@ -29,7 +29,7 @@ class Badge{
     //construct
     public function svg($str){
         if(!is_file($this->imageFontFile)){
-            exit("string");
+            throw new Exception('ERROR: {$this->imageFontFile}  file does not exist');
         }
         if(!is_array($str)){
             $str = array(array((string)$str, '44CC11'));
