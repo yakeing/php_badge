@@ -3,7 +3,8 @@
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 [![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
 [![Language](https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
-[![Php](https://img.shields.io/github/languages/top/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge)
+[![Php](https://oauth.applinzi.com/Badge/php/100%25/007EC6.svg)](https://github.com/yakeing/php_badge)
+[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge)
 
 
 # Badge
