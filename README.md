@@ -1,14 +1,34 @@
+# Badge
+This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
+
+### Example
+[![State](https://oauth.applinzi.com/State/yakeing/index.svg)](https://github.com/yakeing/php_badge)
+
+```
+    https://oauth.applinzi.com/State/yakeing/index.svg
+```
+
+---
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 [![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
 [![Language](https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
 [![Php](https://oauth.applinzi.com/Badge/php/100%25/007EC6.svg)](https://github.com/yakeing/php_badge)
+
+```
+    https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg
+```
+
+---
+
 [![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge)
 
+```
+    https://oauth.applinzi.com/Hits/yakeing/php_badge.svg
+```
 
-# Badge
-This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
+---
 
 ### Travis CI
 
