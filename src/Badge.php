@@ -21,6 +21,7 @@ class Badge{
     public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
     public $imageFontFile = 'DejaVu-Sans.ttf'; //font file path
     public $SimplexmlNo = false; //Simplexml Svg
+    public $CacheControl = 'must-revalidate, max-age=86400, public'; //no-cache
 
     private $imageFontSize = 8; //image font size
     private $svgFontSize = 110; //svg font size
@@ -166,7 +167,7 @@ EOB;
     //Output code
     private function Output($svg){
         header('Content-Disposition: inline; filename="image.svg"');
-        header ('Cache-Control: max-age=604800,public');
+        header('Cache-Control: '.$this->CacheControl);
         header('Content-Type: image/svg+xml');
         echo $svg;
     } //END Output
