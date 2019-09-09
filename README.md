@@ -1,6 +1,4 @@
-<div align=center>
- [![State](https://raw.githubusercontent.com/yakeing/php_badge/master/Subsidiary/SVG.png)](https://github.com/yakeing/php_badge)
-</div>
+<div align=center><img src="https://raw.githubusercontent.com/yakeing/php_badge/master/Subsidiary/SVG.png"/></div>
 
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
