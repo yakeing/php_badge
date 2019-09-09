@@ -1,7 +1,5 @@
 <div align=center>
- 
  [![State](https://raw.githubusercontent.com/yakeing/php_badge/master/Subsidiary/SVG.png)](https://github.com/yakeing/php_badge)
-
 </div>
 
 # Badge
