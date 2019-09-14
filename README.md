@@ -4,10 +4,10 @@
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
 ### Example
-[![State](https://oauth.applinzi.com/State/yakeing/index.svg)](https://github.com/yakeing/php_badge)
+[![State](https://oauth.applinzi.com/State/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
 
 ```
-    https://oauth.applinzi.com/State/yakeing/index.svg
+    https://oauth.applinzi.com/State/yakeing/index/null.svg
 ```
 
 ---
@@ -24,10 +24,10 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ---
 
-[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge)
+[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
 
 ```
-    https://oauth.applinzi.com/Hits/yakeing/php_badge.svg
+    https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
 ```
 
 ---
