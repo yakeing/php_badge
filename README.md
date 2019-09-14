@@ -29,7 +29,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 [![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
 [![Language](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
-[![Php](https://oauth.applinzi.com/Label/php/100.0%25/007EC6.svg)](https://github.com/yakeing/php_badge)
+[![php](https://oauth.applinzi.com/Label/php/100.0%25/007EC6.svg)](https://github.com/yakeing/php_badge)
 
 ```
     https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -55,11 +55,36 @@ This is an identification tag based on SVG, It can quickly generate various labe
     ++$count;
     array(
      array('hits','555555'),
-     array($count,{COLOR})
+     array($count,'4C1')
     );
     
     //test example
     //https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
+```
+
+---
+
+### State Example
+
+[![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
+[![stars](https://oauth.applinzi.com/State/stars/999%25/decb00.svg)](https://github.com/yakeing/php_badge)
+[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea66a6.svg)](https://github.com/yakeing/php_badge)
+[![thumb](https://oauth.applinzi.com/State/thumb/888%25/636AD0.svg)](https://github.com/yakeing/php_badge)
+[![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
+
+```
+    https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
+    
+    //get logo file
+    $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
+    $Badge->IconWidthHeight = '-50 -20 1100 1100'; //Svg Icon x, y, Width, Height
+    
+    array(
+     array({MESSAGE},{COLOR})
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg
 ```
 
 ---
