@@ -3,31 +3,63 @@
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
-### Example
-[![State](https://oauth.applinzi.com/State/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
+### Server Example
+
+[![Server](https://oauth.applinzi.com/Server/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
 
 ```
-    https://oauth.applinzi.com/State/yakeing/index/null.svg
+    https://example.com/Server/{USERNAME}/{PROJECT}/null.svg
+    
+    array(
+     array('{OS}','555555'),
+     array('CPU: {CPU}','A0ABFC'),
+     array('RAM: {RAM}','F0A010')
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/Server/yakeing/index/null.svg
+    
 ```
 
 ---
+
+### Label Example
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 [![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
-[![Language](https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
-[![Php](https://oauth.applinzi.com/Badge/php/100.0%25/007EC6.svg)](https://github.com/yakeing/php_badge)
+[![Language](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
+[![Php](https://oauth.applinzi.com/Label/php/100.0%25/007EC6.svg)](https://github.com/yakeing/php_badge)
 
 ```
-    https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg
+    https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
+    
+    array(
+     array({LABEL},'555555'),
+     array({MESSAGE},{COLOR})
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg
 ```
 
 ---
 
+### Hits Example
+
 [![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
 
 ```
-    https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
+    https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
+    
+    ++$count;
+    array(
+     array('hits','555555'),
+     array($count,{COLOR})
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
 ```
 
 ---
