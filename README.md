@@ -67,9 +67,9 @@ This is an identification tag based on SVG, It can quickly generate various labe
 ### State Example
 
 [![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
-[![stars](https://oauth.applinzi.com/State/stars/999%25/f58220.svg)](https://github.com/yakeing/php_badge)
-[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea66a6.svg)](https://github.com/yakeing/php_badge)
-[![thumb](https://oauth.applinzi.com/State/thumb/888%25/636AD0.svg)](https://github.com/yakeing/php_badge)
+[![stars](https://oauth.applinzi.com/State/stars/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
+[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
+[![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
 
 ```
@@ -78,6 +78,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
     //get logo file
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
     $Badge->IconWidthHeight = '-50 -20 1100 1100'; //Svg Icon x, y, Width, Height
+    $Badge->opacity = 0.7; //transparency (0 - 1)
     
     array(
      array({MESSAGE},{COLOR})
