@@ -3,7 +3,7 @@
  *  Badge
  *  This is an identification tag based on SVG
  * @author http://weibo.com/yakeing
- * @version 4.0
+ * @version 4.1
  * logo ≥14px
  * 97CA00 green
  * 8892BF purple
@@ -18,10 +18,14 @@
 namespace php_badge;
 class Badge{
 
-    public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
     public $imageFontFile = 'DejaVu-Sans.ttf'; //font file path
+    public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
     public $SimplexmlNo = false; //Simplexml Svg
-    public $CacheControl = 'must-revalidate, max-age=86400, public'; //no-cache
+    public $CacheControl = 'must-revalidate, max-age=600, public'; //no-cache
+    public $Icon = false; //Svg Icon <path d="M23....." fill="#FFF"></path>
+    public $viewBox = '-120 -85 1200 1200'; //Svg Icon x, y, Width, Height
+    public $opacity = 1; //transparency (0.0 - 1)
+    public $OutputNo = true; //Output
 
     private $imageFontSize = 8; //image font size
     private $svgFontSize = 110; //svg font size
@@ -29,6 +33,9 @@ class Badge{
 
     //construct
     public function svg($str){
+        if(!is_numeric($this->opacity) || 0 > $this->opacity || 1 < $this->opacity){
+            $this->opacity = 1;
+        }
         if(!is_file($this->imageFontFile)){
             throw new Exception('ERROR: {$this->imageFontFile}  file does not exist');
         }
@@ -41,7 +48,11 @@ class Badge{
         }else{
             $svg = $this->Assembly($data);
         }
-        $this->Output($svg);
+        if(true ===  $this->OutputNo){
+        	$this->Output($svg);
+        }else{
+            return $svg;
+        }
     } //END
 
     //Generate Data
@@ -92,18 +103,21 @@ class Badge{
         $gtext->addAttribute('text-anchor', 'middle');
         $gtext->addAttribute('font-family',$this->svgFontFamily);//$this->svgFontFamily
         $gtext->addAttribute('font-size', $this->svgFontSize);//$this->svgFontSize
-        $textLabel = $pathLabel = '';
-        $x = $M = $h = $width = 0;
+        $x = $M = $w = $width = 0;
+        if(!is_bool($this->Icon)){
+        	$x = 160;
+            $w = 16;
+        }
         foreach($data as $d){
-            $w = $d[2]+10;
+            $w += $d[2]+10;
             $width += $w;
             $textLength = $d[2]*10;
-            $x += 50+($textLength/2);
-            $h = $w;
+            $p = 50+($d[2]*5);
+            $x += $p;
             //---------- path -----------
             $path = $gPath->addChild('path');
             $path->addAttribute('fill', '#'.$d[1]);//fill
-            $path->addAttribute('d', 'M'.$M.' 0h'.$h.'v20H'.$M.'z');//$M
+            $path->addAttribute('d', 'M'.$M.' 0h'.$w.'v20H'.$M.'z');//$M
             //------- text ---------
             $text = $gtext->addChild('text', $d[0]);//str
             $text->addAttribute('x', $x);//$x
@@ -117,32 +131,52 @@ class Badge{
             $text->addAttribute('y', '140');//140
             $text->addAttribute('transform', 'scale(.1)');
             $text->addAttribute('textLength', $textLength);//$textLength
-            $x += 40+($textLength/2);
-            $M += $h;
+            $x += $p;
+            $M += $w;
+            $w = 0;
         }
         $svg->addAttribute('width', $width);//$width
         $rect->addAttribute('width', $width);//$width
         $path = $gPath->addChild('path');
         $path->addAttribute('fill', 'url(#b)');
         $path->addAttribute('d', 'M0 0h '.$width.'v20H0z');//$width
+        if(!is_bool($this->Icon)){
+        	$addIco = $svg->addChild('svg');
+            $icoPath = $addIco->addChild('path');
+            $icon = simplexml_load_string($this->Icon);
+            foreach($icon[0]->attributes() as $name => $value){
+                $icoPath->addAttribute($name, $value);
+            }
+        	$addIco->addAttribute('viewBox', $this->viewBox);
+        	$addIco->addAttribute('preserveAspectRatio', 'xMinYMid meet');
+        	$addIco->addAttribute('opacity', $this->opacity);
+        }
     return $svg->asXML();
     } //END
 
     //Assembly
     private function Assembly($data){
-        $textLabel = $pathLabel = '';
-        $x = $M = $h = $width = 0;
+        $icons = $textLabel = $pathLabel = '';
+        $x = $M = $w = $width = 0;
+        if(!is_bool($this->Icon)){
+        	$x = 160;
+            $w = 16;
+        }
         foreach ($data as $d){
-            $w = $d[2]+10;
+            $w += $d[2]+10;
             $width += $w;
             $textLength = $d[2]*10;
-            $x += 50+($textLength/2);
-            $h = $w;
-            $pathLabel .= '<path fill="#'.$d[1].'" d="M'.$M.' 0h'.$h.'v20H'.$M.'z"/>';
+            $p = 50+($d[2]*5);
+            $x += $p;
+            $pathLabel .= '<path fill="#'.$d[1].'" d="M'.$M.' 0h'.$w.'v20H'.$M.'z"/>';
             $textLabel .= '<text x="'.$x.'" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="'.$textLength.'">'.$d[0].'</text>';
             $textLabel .= '<text x="'.$x.'" y="140" transform="scale(.1)" textLength="'.$textLength.'">'.$d[0].'</text>';
-            $x += 40+($textLength/2);
-            $M += $h;
+            $x += $p;
+            $M += $w;
+            $w = 0;
+        }
+        if(!is_bool($this->Icon)){
+            $icons = '<svg viewBox="'.$this->viewBox.'" preserveAspectRatio="xMinYMid meet" opacity="'.$this->opacity.'">'.$this->Icon.'</svg>';
         }
 return <<<EOB
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{$width}" height="20">
@@ -160,6 +194,7 @@ return <<<EOB
     <g fill="#fff" text-anchor="middle" font-family="{$this->svgFontFamily}" font-size="{$this->svgFontSize}">
        {$textLabel}
     </g>
+    {$icons}
 </svg>
 EOB;
     } //END
