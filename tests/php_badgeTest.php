@@ -26,7 +26,7 @@ class php_badgeTest extends TestCase{
     $ob_Splicing = $Badge->svg($db_Splicing);
     file_put_contents('/tmp/Splicing.svg', $ob_Splicing);
     $this->assertFileExists('/tmp/Splicing.svg');
-    //$this->assertXmlFileEqualsXmlFile($path.'/Splicing.svg', '/tmp/Splicing.svg');
+    $this->assertXmlFileEqualsXmlFile($path.'/Splicing.svg', '/tmp/Splicing.svg');
     //----------- Simplexml --------------//
     $Badge->SimplexmlNo = true; //Simplexml Svg
      $db_Simplexml = array(
@@ -36,6 +36,6 @@ class php_badgeTest extends TestCase{
     $ob_Simplexml = $Badge->svg($db_Simplexml);
     file_put_contents('/tmp/Simplexml.svg', $ob_Simplexml);
     $this->assertFileExists('/tmp/Simplexml.svg');
-    //$this->assertXmlFileEqualsXmlFile($path.'/Simplexml.svg', '/tmp/Simplexml.svg');
+    $this->assertXmlFileEqualsXmlFile($path.'/Simplexml.svg', '/tmp/Simplexml.svg');
   }
 }
