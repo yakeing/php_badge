@@ -3,6 +3,25 @@
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
+### Hits Example
+
+[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
+
+```
+    https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
+    
+    ++$count;
+    array(
+     array('hits','555555'),
+     array($count,'4C1')
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
+```
+
+---
+
 ### Server Example
 
 [![Server](https://oauth.applinzi.com/Server/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
@@ -19,6 +38,32 @@ This is an identification tag based on SVG, It can quickly generate various labe
     //test example
     //https://oauth.applinzi.com/Server/yakeing/index/null.svg
     
+```
+
+---
+
+### State Example
+
+[![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
+[![stars](https://oauth.applinzi.com/State/stars/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
+[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
+[![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
+[![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
+
+```
+    https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
+    
+    //get logo file
+    $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
+    $Badge->viewBox = '-120 -85 1200 1200'; //Svg Icon x, y, Width, Height
+    $Badge->opacity = 0.7; //transparency (0 - 1)
+    
+    array(
+     array({MESSAGE},{COLOR})
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg
 ```
 
 ---
@@ -41,51 +86,6 @@ This is an identification tag based on SVG, It can quickly generate various labe
     
     //test example
     //https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg
-```
-
----
-
-### Hits Example
-
-[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
-
-```
-    https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
-    
-    ++$count;
-    array(
-     array('hits','555555'),
-     array($count,'4C1')
-    );
-    
-    //test example
-    //https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
-```
-
----
-
-### State Example
-
-[![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
-[![stars](https://oauth.applinzi.com/State/stars/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
-[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
-[![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
-[![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
-
-```
-    https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
-    
-    //get logo file
-    $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
-    $Badge->IconWidthHeight = '-50 -20 1100 1100'; //Svg Icon x, y, Width, Height
-    $Badge->opacity = 0.7; //transparency (0 - 1)
-    
-    array(
-     array({MESSAGE},{COLOR})
-    );
-    
-    //test example
-    //https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg
 ```
 
 ---
