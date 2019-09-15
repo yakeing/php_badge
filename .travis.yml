@@ -29,8 +29,8 @@ deploy:
   file_glob: true
   file:
     - /tmp/Core.tar.gz
-    - /tmp/DB.svg
-    - /tmp/CI.svg
+    - /tmp/Splicing.svg
+    - /tmp/Simplexml.svg
   skip_cleanup: true
   on:
     tags: true
