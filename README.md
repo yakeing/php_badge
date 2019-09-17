@@ -79,6 +79,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 ```
     https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
     
+    $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
     array(
      array({LABEL},'555555'),
      array({MESSAGE},{COLOR})
