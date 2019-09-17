@@ -8,15 +8,6 @@ class php_badgeTest extends TestCase{
     $path = dirname(__FILE__);
     $Badge = new Badge();
     $Badge->imageFontFile = $path.'/DejaVu-Sans.ttf'; //font file path
-    //----------- STR --------------//
-    $str = 'Test';
-    ob_start();
-      $Badge->svg($str);
-    $ob_STR = ob_get_contents();
-    ob_end_clean();
-    //file_put_contents('/tmp/STR.svg', $ob_STR);
-    //$this->assertFileExists('/tmp/STR.svg');
-    //$this->assertXmlStringEqualsXmlFile('/tmp/STR.svg', $str);
     $Badge->OutputNo = false; //Return string
     //----------- Splicing --------------//
     $db_Splicing = array(
@@ -37,5 +28,22 @@ class php_badgeTest extends TestCase{
     file_put_contents('/tmp/Simplexml.svg', $ob_Simplexml);
     $this->assertFileExists('/tmp/Simplexml.svg');
     $this->assertXmlFileEqualsXmlFile($path.'/Simplexml.svg', '/tmp/Simplexml.svg');
+    //----------- ICON --------------//
+    $Badge->Icon  = '<path d="M512 512m-273.07008 0a273.07008 273.07008 0 1 0 546.14016 0 273.07008 273.07008 0 1 0-546.14016 0Z"></path>';
+    $icon = $Badge->svg('Test');
+    //file_put_contents('/tmp/ICON.svg', $icon);
+    //$this->assertFileExists('/tmp/ICON.svg');
+    //$this->assertXmlStringEqualsXmlFile('/tmp/ICON.svg', $icon);
+    //----------- ICON2 --------------//
+    $Badge->SimplexmlNo = false; //Simplexml Svg
+    $Badge->OutputNo = true; //Output
+    $Badge->opacity = 1.1; //error transparency 
+    ob_start();
+      $Badge->svg('Test');
+    $icon2 = ob_get_contents();
+    ob_end_clean();
+    //file_put_contents('/tmp/ICON2.svg', $icon2);
+    //$this->assertFileExists('/tmp/ICON2.svg');
+    //$this->assertXmlStringEqualsXmlFile('/tmp/ICON2.svg', $icon2);
   }
 }
