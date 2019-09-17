@@ -45,7 +45,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 ### State Example
 
 [![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
-[![stars](https://oauth.applinzi.com/State/stars/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
+[![star](https://oauth.applinzi.com/State/star/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
 [![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
 [![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
