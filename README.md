@@ -1,4 +1,4 @@
-<div align=center><img src="https://raw.githubusercontent.com/yakeing/php_badge/master/Subsidiary/SVG.png"/></div>
+<div align=center><img src="https://images.gitee.com/uploads/images/2019/0918/004104_315688cf_5313489.png"/></div>
 
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
@@ -7,8 +7,8 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
 
-```
-    https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
+```php
+    //https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
     
     ++$count;
     array(
@@ -26,8 +26,8 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![Server](https://oauth.applinzi.com/Server/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
 
-```
-    https://example.com/Server/{USERNAME}/{PROJECT}/null.svg
+```php
+    //https://example.com/Server/{USERNAME}/{PROJECT}/null.svg
     
     array(
      array('{OS}','555555'),
@@ -50,8 +50,8 @@ This is an identification tag based on SVG, It can quickly generate various labe
 [![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
 
-```
-    https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
+```php
+    //https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
     
     //get logo file
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
@@ -77,8 +77,8 @@ This is an identification tag based on SVG, It can quickly generate various labe
 [![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](https://github.com/yakeing/php_badge/network/members)
 [![github](https://oauth.applinzi.com/Label/github/Active/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 
-```
-    https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
+```php
+    //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
     
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
     array(
@@ -114,7 +114,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 Use [Composer](https://getcomposer.org) to install the library.
 
-```
+```shell
     $ composer require yakeing/php_badge
 ```
 
@@ -142,11 +142,11 @@ If you've got value from any of the content which I have created, then I would v
 
  1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8
 
- ![Bitcoin](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Bitcoin.png)
+ ![Bitcoin](https://images.gitee.com/uploads/images/2019/0918/004104_0b15a590_5313489.png)
 
  WeChat
 
- ![WeChat](https://raw.githubusercontent.com/yakeing/Content/master/Donate/WeChat.png)
+ ![WeChat](https://images.gitee.com/uploads/images/2019/0918/004058_3a2715bd_5313489.png)
 
  Alipay
 
