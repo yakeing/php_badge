@@ -73,7 +73,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 [![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/28a745.svg)](https://github.com/yakeing/php_badge/releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_badge/search?l=php)
-[![star](https://oauth.applinzi.com/Label/star/999/de773f.svg)](https://github.com/yakeing/php_badge/stargazers)
+[![star](https://oauth.applinzi.com/Label/star/999/ad8b3d.svg)](https://github.com/yakeing/php_badge/stargazers)
 [![fork](https://oauth.applinzi.com/Label/fork/999/8552a1.svg)](https://github.com/yakeing/php_badge/network/members)
 [![github](https://oauth.applinzi.com/Label/github/Active/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 
