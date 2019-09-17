@@ -45,7 +45,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 ### State Example
 
 [![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
-[![star](https://oauth.applinzi.com/State/star/99.9%25/f58220.svg)](https://github.com/yakeing/php_badge)
+[![rocket](https://oauth.applinzi.com/State/rocket/PASSED/28a745.svg)](https://github.com/yakeing/php_badge)
 [![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
 [![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
@@ -70,11 +70,12 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Label Example
 
-[![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
-[![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 [![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/28a745.svg)](https://github.com/yakeing/php_badge/releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_badge/search?l=php)
+[![star](https://oauth.applinzi.com/Label/star/999/f58220.svg)](https://github.com/yakeing/php_badge/stargazers)
+[![fork](https://oauth.applinzi.com/Label/fork/999/8552a1.svg)](https://github.com/yakeing/php_badge/network/members)
+[![github](https://oauth.applinzi.com/Label/github/Active/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 
 ```
     https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -103,6 +104,11 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
 [![Downloads](http://img.shields.io/packagist/dt/yakeing/php_badge.svg)](https://packagist.org/packages/yakeing/php_badge)
+
+### Github
+
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
+[![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
 
 ### Installation
 
