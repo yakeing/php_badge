@@ -72,9 +72,9 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
-[![tag](https://img.shields.io/github/tag/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
+[![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/28a745.svg)](https://github.com/yakeing/php_badge/releases)
 [![Language](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
-[![php](https://oauth.applinzi.com/Label/php/100.0%25/007EC6.svg)](https://github.com/yakeing/php_badge)
+[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_curl/search?l=php)
 
 ```
     https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
