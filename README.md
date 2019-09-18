@@ -5,10 +5,10 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Hits Example
 
-[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg)](https://github.com/yakeing/php_badge)
+[![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg)](https://github.com/yakeing/php_badge)
 
 ```php
-    //https://example.com/Hits/{USERNAME}/{PROJECT}/null.svg
+    //https://example.com/Hits/{USERNAME}/{PROJECT}/image.svg
     
     ++$count;
     array(
@@ -17,17 +17,17 @@ This is an identification tag based on SVG, It can quickly generate various labe
     );
     
     //test example
-    //https://oauth.applinzi.com/Hits/yakeing/php_badge/null.svg
+    //https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg
 ```
 
 ---
 
 ### Server Example
 
-[![Server](https://oauth.applinzi.com/Server/yakeing/index/null.svg)](https://github.com/yakeing/php_badge)
+[![Server](https://oauth.applinzi.com/Server/yakeing/index/image.svg)](https://github.com/yakeing/php_badge)
 
 ```php
-    //https://example.com/Server/{USERNAME}/{PROJECT}/null.svg
+    //https://example.com/Server/{USERNAME}/{PROJECT}/image.svg
     
     array(
      array('{OS}','555555'),
@@ -36,7 +36,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
     );
     
     //test example
-    //https://oauth.applinzi.com/Server/yakeing/index/null.svg
+    //https://oauth.applinzi.com/Server/yakeing/index/image.svg
     
 ```
 
