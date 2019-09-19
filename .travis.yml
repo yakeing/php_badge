@@ -18,6 +18,10 @@ before_install:
 
 script:
   - phpunit --stderr
+  - npm init
+  - npm who am i
+  - npm login
+  - npm publish
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
