@@ -62,7 +62,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
 [![Pages](https://oauth.applinzi.com/State/rocket/Pages/28a745.svg)](https://github.com/yakeing/php_badge)
-[![watch](https://oauth.applinzi.com/State/watch/Watch/ea4c89.svg)](https://github.com/yakeing/php_badge)
+[![github](https://oauth.applinzi.com/State/github/Active/ea4c89.svg)](https://github.com/yakeing/php_badge)
 [![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
 
@@ -89,9 +89,9 @@ This is an identification tag based on SVG, It can quickly generate various labe
 [![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](https://github.com/yakeing/php_badge/releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_badge/search?l=php)
+[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 [![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](https://github.com/yakeing/php_badge/stargazers)
 [![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](https://github.com/yakeing/php_badge/network/members)
-[![github](https://oauth.applinzi.com/Label/github/Active/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 
 ```php
     //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
