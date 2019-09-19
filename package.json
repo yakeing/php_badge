@@ -1,5 +1,5 @@
 {
-    "name": "php_badge",
+    "name": "php-badge",
     "version": "4.1.0",
     "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
     "keywords": ["Badge", "SVG"],
@@ -18,7 +18,7 @@
       "url": "https://github.com/yakeing/php_badge.git"
     },
     "dependencies": {
-        "php_badge": "git://github.com/yakeing/php_badge.git#commit-ish"
+        "php-badge": "git://github.com/yakeing/php_badge.git#commit-ish"
     },
     "bugs": {
         "url": "https://github.com/yakeing/php_badge/issues"
