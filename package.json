@@ -1,5 +1,13 @@
 {
-  "name": "php_badge",
-  "version": "4.1.0",
-  "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers"
+    "name": "php_badge",
+    "version": "4.1.0",
+    "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
+    "keywords": ["Badge", "SVG"],
+    "homepage": "https://github.com/yakeing/php_badge",
+    "type": "symfony-bundle",
+    "license": "MPL-2.0",
+    "author": {
+            "name": "yakeing",
+            "url": "http://weibo.com/yakeing"
+        }
 }
