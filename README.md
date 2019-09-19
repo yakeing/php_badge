@@ -3,6 +3,22 @@
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
+### Sponsor Example
+
+[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/sponsors/)
+
+```php
+    $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
+    array(
+     array({MESSAGE},{COLOR})
+    );
+    
+    //test example
+    //https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg
+```
+
+---
+
 ### Hits Example
 
 [![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg)](https://github.com/yakeing/php_badge)
