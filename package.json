@@ -20,6 +20,9 @@
     "dependencies": {
         "php-badge": "git://github.com/yakeing/php_badge.git#commit-ish"
     },
+    "devDependencies": {
+        "php-fsockopen": "git://github.com/yakeing/php_fsockopen.git#commit-ish"
+    },
     "bugs": {
         "url": "https://github.com/yakeing/php_badge/issues"
     }
