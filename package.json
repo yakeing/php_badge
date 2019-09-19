@@ -17,6 +17,9 @@
       "type": "git",
       "url": "https://github.com/yakeing/php_badge.git"
     },
+    "dependencies": {
+        "php_badge": "git://github.com/yakeing/php_badge.git#commit-ish"
+    },
     "bugs": {
         "url": "https://github.com/yakeing/php_badge/issues"
     }
