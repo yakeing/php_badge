@@ -1,11 +1,10 @@
 {
   "name": "php-badge",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
   "main": "index.js",
   "dependencies": {
-    "cnpm": "^6.1.0",
-    "npm": "^6.10.3"
+        "php-badge": "*"
   },
   "devDependencies": {
         "php-fsockopen": "*"
