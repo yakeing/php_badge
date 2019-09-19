@@ -1,29 +1,30 @@
 {
-    "name": "php-badge",
-    "version": "4.1.0",
-    "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
-    "keywords": ["Badge", "SVG"],
-    "homepage": "https://github.com/yakeing/php_badge",
-    "type": "symfony-bundle",
-    "license": "MPL-2.0",
-    "author": {
-            "name": "yakeing",
-            "url": "http://weibo.com/yakeing"
-        },
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/yakeing/php_badge.git"
-    },
-    "dependencies": {
-        "php-badge": "git://github.com/yakeing/php_badge.git#commit-ish"
-    },
-    "devDependencies": {
+  "name": "php-badge",
+  "version": "4.1.0",
+  "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
+  "main": "index.js",
+  "dependencies": {
+    "cnpm": "^6.1.0",
+    "npm": "^6.10.3"
+  },
+  "devDependencies": {
         "php-fsockopen": "*"
-    },
-    "bugs": {
-        "url": "https://github.com/yakeing/php_badge/issues"
-    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakeing/php_badge.git"
+  },
+  "keywords": [
+    "Badge",
+    "svg"
+  ],
+  "author": "yakeing",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/yakeing/php_badge/issues"
+  },
+  "homepage": "https://github.com/yakeing/php_badge#readme"
 }
