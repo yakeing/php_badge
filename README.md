@@ -3,7 +3,7 @@
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
-### Sponsor Example
+### Sponsors Example
 
 [![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/sponsors/)
 
@@ -150,7 +150,7 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ```
 
-Donate
+Sponsors
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
