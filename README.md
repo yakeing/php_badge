@@ -62,7 +62,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)](https://github.com/yakeing/php_badge)
 [![Pages](https://oauth.applinzi.com/State/rocket/Pages/28a745.svg)](https://github.com/yakeing/php_badge)
-[![hearts](https://oauth.applinzi.com/State/hearts/LOVE/ea4c89.svg)](https://github.com/yakeing/php_badge)
+[![watch](https://oauth.applinzi.com/State/watch/Watch/ea4c89.svg)](https://github.com/yakeing/php_badge)
 [![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)](https://github.com/yakeing/php_badge)
 [![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)](https://github.com/yakeing/php_badge)
 
