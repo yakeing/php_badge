@@ -18,8 +18,6 @@ before_install:
 
 script:
   - phpunit --stderr
-  - npm init
-  - npm who am i
   - npm login
   - npm publish
 
