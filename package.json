@@ -7,7 +7,15 @@
     "php-fsockopen": "*",
     "php-badge": "*",
     "@yakeing/str-increment": "*",
-    "php-letsencrypt": "*"
+    "php-letsencrypt": "*",
+    "@yakeing/dnspod-api": "*",
+    "@yakeing/php-session": "*",
+    "php-jwsign": "*",
+    "php-saekv": "*",
+    "get-header": "*",
+    "php-curl": "*",
+    "@yakeing/php-template": "*",
+    "@yakeing/qrcode": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
