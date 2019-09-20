@@ -3,8 +3,11 @@
   "version": "4.1.1",
   "description": "This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.",
   "main": "index.js",
-  "dependencies": {
-        "php-badge": "*"
+  "devDependencies": {
+    "php-fsockopen": "*",
+    "php-badge": "*",
+    "@yakeing/str-increment": "*",
+    "php-letsencrypt": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
