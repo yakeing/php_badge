@@ -7,6 +7,7 @@ class php_badgeTest extends TestCase{
   public function testBadge(){
     $path = dirname(__FILE__);
     $Badge = new Badge();
+    $Badge->imageFontFile = $path.'/verdana.ttf'; //font file path
     $Badge->OutputNo = false; //Return string
     //----------- Splicing --------------//
     $db_Splicing = array(
