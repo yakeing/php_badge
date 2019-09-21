@@ -3,7 +3,7 @@
  *  Badge
  *  This is an identification tag based on SVG
  * @author http://weibo.com/yakeing
- * @version 4.1
+ * @version 4.2
  * logo ≥14px
  * 97CA00 green
  * 8892BF purple
@@ -18,7 +18,7 @@
 namespace php_badge;
 class Badge{
 
-    public $imageFontFile = 'DejaVu-Sans.ttf'; //font file path
+    public $imageFontFile = 'verdana.ttf'; //font file path
     public $NonEnglishReg = '/[\x{4e00}-\x{9fa5}]/u'; //Non-English String //[Chinese]
     public $SimplexmlNo = false; //Simplexml Svg
     public $CacheControl = 'must-revalidate, max-age=600, public'; //no-cache
@@ -49,7 +49,7 @@ class Badge{
             $svg = $this->Assembly($data);
         }
         if(true ===  $this->OutputNo){
-        	$this->Output($svg);
+            $this->Output($svg);
         }else{
             return $svg;
         }
@@ -60,15 +60,13 @@ class Badge{
     private function GenerateData($str){
         $data = array();
         foreach ($str as $v){
-            $len = strlen($v[0]);
+            $len = mb_strlen($v[0], 'utf8'); //strlen
             $NonEnglish = preg_match_all($this->NonEnglishReg, $v[0]);
-            $imageWidth = imagettfbbox($this->imageFontSize, 0, $this->imageFontFile, $v[0]);
-            $wx = abs($imageWidth[4] - $imageWidth[0])+($NonEnglish*5)+1;
-            if(($len%2 == 0)){
-                --$wx; //even
-            }else{
+            $imageBox = imagettfbbox($this->imageFontSize, 0, $this->imageFontFile, $v[0]);
+            $wx = abs($imageBox[2] - $imageBox[0])+($NonEnglish*5);
+            if(($len%2 != 0)){
                 ++$wx; //odd
-            }
+            }// --$wx; //even
             $data[] = array($v[0], $v[1], $wx);
         }
         return $data;
@@ -105,7 +103,7 @@ class Badge{
         $gtext->addAttribute('font-size', $this->svgFontSize);//$this->svgFontSize
         $x = $M = $w = $width = 0;
         if(!is_bool($this->Icon)){
-        	$x = 160;
+            $x = 160;
             $w = 16;
         }
         foreach($data as $d){
@@ -141,15 +139,15 @@ class Badge{
         $path->addAttribute('fill', 'url(#b)');
         $path->addAttribute('d', 'M0 0h '.$width.'v20H0z');//$width
         if(!is_bool($this->Icon)){
-        	$addIco = $svg->addChild('svg');
+            $addIco = $svg->addChild('svg');
             $icoPath = $addIco->addChild('path');
             $icon = simplexml_load_string($this->Icon);
             foreach($icon[0]->attributes() as $name => $value){
                 $icoPath->addAttribute($name, $value);
             }
-        	$addIco->addAttribute('viewBox', $this->viewBox);
-        	$addIco->addAttribute('preserveAspectRatio', 'xMinYMid meet');
-        	$addIco->addAttribute('opacity', $this->opacity);
+            $addIco->addAttribute('viewBox', $this->viewBox);
+            $addIco->addAttribute('preserveAspectRatio', 'xMinYMid meet');
+            $addIco->addAttribute('opacity', $this->opacity);
         }
     return $svg->asXML();
     } //END
@@ -159,7 +157,7 @@ class Badge{
         $icons = $textLabel = $pathLabel = '';
         $x = $M = $w = $width = 0;
         if(!is_bool($this->Icon)){
-        	$x = 160;
+            $x = 160;
             $w = 16;
         }
         foreach ($data as $d){
