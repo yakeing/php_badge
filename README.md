@@ -150,23 +150,11 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ```
 
-Sponsors
+[Sponsor](https://yakeing.tk/Sponsor/)
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
- [Bitcoin](https://btc.com/1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8)
-
- 1FYbZECgs3V3zRx6P7yAu2nCDXP2DHpwt8
-
- ![Bitcoin](https://images.gitee.com/uploads/images/2019/0918/004104_0b15a590_5313489.png)
-
- WeChat
-
- ![WeChat](https://images.gitee.com/uploads/images/2019/0918/004058_3a2715bd_5313489.png)
-
- Alipay
-
- ![Alipay](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Alipay.png)
+[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/Sponsor/)
 
 Author
 ---
