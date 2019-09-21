@@ -11,8 +11,8 @@ class php_badgeTest extends TestCase{
     $Badge->OutputNo = false; //Return string
     //----------- Splicing --------------//
     $db_Splicing = array(
-        array('build', '555'), //#555555
-        array('passing', '4C1'), //#44CC11
+        array('hits','555'), //#555555
+        array('12345','4C1') //#44CC11
     );
     $ob_Splicing = $Badge->svg($db_Splicing);
     file_put_contents('/tmp/Splicing.svg', $ob_Splicing);
@@ -21,8 +21,8 @@ class php_badgeTest extends TestCase{
     //----------- Simplexml --------------//
     $Badge->SimplexmlNo = true; //Simplexml Svg
      $db_Simplexml = array(
-        array('hits','555555'), //#555555
-        array('12345','4C1') //#44CC11
+        array('build', '555'), //#555555
+        array('passing', '4C1'), //#44CC11
     );
     $ob_Simplexml = $Badge->svg($db_Simplexml);
     file_put_contents('/tmp/Simplexml.svg', $ob_Simplexml);
