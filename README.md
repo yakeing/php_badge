@@ -153,11 +153,11 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ```
 
-[Sponsor](https://yakeing.tk/Sponsor/)
+[Sponsor](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/Sponsor/)
+[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 Author
 ---
