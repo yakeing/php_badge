@@ -88,6 +88,9 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 [![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](https://github.com/yakeing/php_badge/releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
+[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](https://github.com/yakeing/php_badge)
+[![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](https://github.com/yakeing/php_badge/search?l=php)
+
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_badge/search?l=php)
 [![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
 [![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](https://github.com/yakeing/php_badge/stargazers)
