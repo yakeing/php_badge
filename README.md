@@ -110,7 +110,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Travis CI
 
-[![Travis-ci](https://api.travis-ci.org/yakeing/php_badge.svg)](https://travis-ci.org/yakeing/php_badge)
+[![Travis-ci](https://api.travis-ci.com/yakeing/php_badge.svg)](https://travis-ci.org/yakeing/php_badge)
 
 ### codecov
 
