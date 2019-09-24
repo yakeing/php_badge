@@ -5,7 +5,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Sponsors Example
 
-[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/sponsors/)
+[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 ```php
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
@@ -111,20 +111,20 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ---
 
-### Travis CI
+### Travis CI badge
 
-[![Travis-ci](https://api.travis-ci.com/yakeing/php_badge.svg)](https://travis-ci.org/yakeing/php_badge)
+[![Travis-ci](https://api.travis-ci.com/yakeing/php_badge.svg)](https://travis-ci.com/yakeing/php_badge)
 
-### codecov
+### codecov badge
 
 [![codecov](https://codecov.io/gh/yakeing/php_badge/branch/master/graph/badge.svg)](https://codecov.io/gh/yakeing/php_badge)
 
-### Packagist
+### Packagist badge
 
 [![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](https://github.com/yakeing/php_badge/releases)
 [![Downloads](http://img.shields.io/packagist/dt/yakeing/php_badge.svg)](https://packagist.org/packages/yakeing/php_badge)
 
-### Github
+### Github badge
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](https://github.com/yakeing/php_badge)
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](https://github.com/yakeing/php_badge/blob/master/src/Badge.php)
@@ -132,6 +132,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 ### Installation
 
 Use [Composer](https://getcomposer.org) to install the library.
+Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/php_badge) to view.
 
 ```shell
     $ composer require yakeing/php_badge
