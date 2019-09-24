@@ -21,7 +21,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Hits Example
 
-[Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg)
+![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg)
 
 ```php
     //https://example.com/Hits/{USERNAME}/{PROJECT}/image.svg
@@ -40,7 +40,7 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Server Example
 
-[Server](https://oauth.applinzi.com/Server/yakeing/index/image.svg)
+![Server](https://oauth.applinzi.com/Server/yakeing/index/image.svg)
 
 ```php
     //https://example.com/Server/{USERNAME}/{PROJECT}/image.svg
@@ -60,11 +60,11 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### State Example
 
-[error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)
-[Active](https://oauth.applinzi.com/State/rocket/Active/28a745.svg)
-[PAGES](https://oauth.applinzi.com/State/github/PAGES/ea4c89.svg)
-[thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)
-[passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)
+![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)
+![Active](https://oauth.applinzi.com/State/rocket/Active/28a745.svg)
+![PAGES](https://oauth.applinzi.com/State/github/PAGES/ea4c89.svg)
+![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)
+![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)
 
 ```php
     //https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
@@ -86,10 +86,10 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### Label Example
 
-[tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](https://github.com/yakeing/php_badge/releases)
-[license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
-[size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](https://github.com/yakeing/php_badge)
-[download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](https://github.com/yakeing/php_badge)
+[![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](https://github.com/yakeing/php_badge/releases)
+[![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/php_badge/blob/master/LICENSE)
+[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](https://github.com/yakeing/php_badge)
+[![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](https://github.com/yakeing/php_badge)
 
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/php_badge/search?l=php)
 [![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](https://github.com/yakeing/php_badge/deployments)
