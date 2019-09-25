@@ -3,6 +3,17 @@
 # Badge
 This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
 
+
+
+### v5.0.0 New version testing
+
+![Sponsor](https://oauth.applinzi.com/Test/heart/color/555555.svg)
+
+```php
+    https://oauth.applinzi.com/Test/heart/color/555555.svg
+```
+
+
 ### Sponsors Example
 
 [![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
