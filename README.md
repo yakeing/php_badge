@@ -7,6 +7,8 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 ### v5.0.0 New version testing
 
+The new border mode can also customize the border color, redesign and adjust the fillet of the badge to make it look more stereoscopic, and add new functions to optimize the program code.
+
 ![Sponsor](https://oauth.applinzi.com/Test/heart/color/555555.svg)
 
 ```php
