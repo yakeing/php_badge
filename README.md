@@ -101,11 +101,11 @@ The new border mode can also customize the border color, redesign and adjust the
 
 [![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](../../releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](LICENSE)
-[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](../../)
+[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](src/Badge.php/)
 [![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](../../)
 
 [![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](../../search?l=php)
-[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](../../deployments)
+[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](../../watchers)
 [![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](../../stargazers)
 [![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](../../network/members)
 
