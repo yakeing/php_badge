@@ -99,15 +99,15 @@ The new border mode can also customize the border color, redesign and adjust the
 
 ### Label Example
 
-[![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](../.../releases)
+[![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](../../releases)
 [![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](LICENSE)
-[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](../.../)
-[![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](../.../)
+[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](../../)
+[![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](../../)
 
-[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](../.../search?l=php)
-[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](../.../deployments)
-[![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](../.../stargazers)
-[![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](../.../network/members)
+[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](../../search?l=php)
+[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](../../deployments)
+[![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](../../stargazers)
+[![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](../../network/members)
 
 ```php
     //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -134,12 +134,12 @@ The new border mode can also customize the border color, redesign and adjust the
 
 ### Packagist badge
 
-[![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](../.../releases)
+[![Version](http://img.shields.io/packagist/v/yakeing/php_badge.svg)](../../releases)
 [![Downloads](http://img.shields.io/packagist/dt/yakeing/php_badge.svg)](https://packagist.org/packages/yakeing/php_badge/dependents)
 
 ### Github badge
 
-[![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](../.../)
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_badge/total.svg)](../../)
 [![Size](https://img.shields.io/github/size/yakeing/php_badge/src/Badge.php.svg)](src/Badge.php)
 
 ### Installation
