@@ -23,8 +23,8 @@ class php_badgeTest extends TestCase{
     );
     $Splicing_ob = $Badge->svg($Splicing_db, $icon, $viewBox, $Stroke, $opacity, $SimplexmlNo, $OutputNo);
     file_put_contents('/tmp/Splicing.svg', $Splicing_ob);
-    //$this->assertFileExists('/tmp/Splicing.svg');
-    //$this->assertXmlFileEqualsXmlFile($path.'/Splicing.svg', '/tmp/Splicing.svg');
+    $this->assertFileExists('/tmp/Splicing.svg');
+    $this->assertXmlFileEqualsXmlFile($path.'/Splicing.svg', '/tmp/Splicing.svg');
 
     //----------- Simplexml --------------//
      $Simplexml_db = array(
@@ -33,8 +33,8 @@ class php_badgeTest extends TestCase{
     );
     $Simplexml_ob = $Badge->svg($Simplexml_db, $icon, $viewBox, $Stroke, $opacity, true, $OutputNo);
     file_put_contents('/tmp/Simplexml.svg', $Simplexml_ob);
-    //$this->assertFileExists('/tmp/Simplexml.svg');
-    //$this->assertXmlFileEqualsXmlFile($path.'/Simplexml.svg', '/tmp/Simplexml.svg');
+    $this->assertFileExists('/tmp/Simplexml.svg');
+    $this->assertXmlFileEqualsXmlFile($path.'/Simplexml.svg', '/tmp/Simplexml.svg');
 
     //----------- ICON --------------//
     $icon  = '<path d="M512 512m-273.07008 0a273.07008 273.07008 0 1 0 546.14016 0 273.07008 273.07008 0 1 0-546.14016 0Z"></path>';
