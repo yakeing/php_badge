@@ -38,7 +38,10 @@ class php_badgeTest extends TestCase{
 
     //----------- ICON --------------//
     $icon  = '<path d="M512 512m-273.07008 0a273.07008 273.07008 0 1 0 546.14016 0 273.07008 273.07008 0 1 0-546.14016 0Z"></path>';
-    $Splicing_ob = $Badge->svg('Test', $icon, $viewBox, $Stroke, $opacity, $SimplexmlNo, $OutputNo);
+    $Test_db = array(
+        array('Test', '555') //#555555
+    );
+    $Splicing_ob = $Badge->svg($Test_db, $icon, $viewBox, $Stroke, $opacity, $SimplexmlNo, $OutputNo);
     //file_put_contents('/tmp/ICON.svg', $icon);
     //$this->assertFileExists('/tmp/ICON.svg');
     //$this->assertXmlStringEqualsXmlFile('/tmp/ICON.svg', $icon);
