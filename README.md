@@ -1,5 +1,5 @@
 # Badge
-This is an identification tag based on SVG, It can quickly generate various labels and status identifiers
+This is an identification tag based on SVG, It can quickly generate various labels and status identifiers.
 
 
 
