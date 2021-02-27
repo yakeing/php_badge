@@ -139,8 +139,8 @@ The new border mode can also customize the border color, redesign and adjust the
 
 ### Github badge
 
-[![Downloads](https://badging.now.sh/github/downloads/yakeing/php_badge?logo=github)](../../)
-[![Size](https://badging.now.sh/github/size/yakeing/php_badge?logo=github)](src)
+[![Downloads](https://badging.now.sh/github/downloads/yakeing/php_badge?icon=github)](../../)
+[![Size](https://badging.now.sh/github/size/yakeing/php_badge?icon=github)](src)
 
 ### Installation
 
@@ -171,7 +171,7 @@ Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/php_
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://badging.now.sh/static/label/Sponsor/EA4AAA?logo=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://badging.now.sh/static/label/Sponsor/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 Author
 ---
