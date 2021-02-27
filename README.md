@@ -7,34 +7,31 @@ This is an identification tag based on SVG, It can quickly generate various labe
 
 The new border mode can also customize the border color, redesign and adjust the fillet of the badge to make it look more stereoscopic, and add new functions to optimize the program code.
 
-![Sponsor](https://oauth.applinzi.com/Test/heart/color/555555.svg)
+![Sponsor](https://badging.now.sh/static/label/Color/555/Red/F00/Orange/FF7F50/Yellow/ffd400/Green/4C1/Cyan/00d6b9/Blue/a0abfc/Violet/d800d8?icon=color&stroke=555)
 
+test example:
 ```php
-    https://oauth.applinzi.com/Test/heart/color/555555.svg
+    https://badging.now.sh
 ```
 
 
 ### Sponsors Example
 
-[![Sponsor](https://oauth.applinzi.com/State/sponsor/Sponsor/EA4AAA.svg)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
-
-[![heart](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Heart](https://badging.now.sh/static/label/Heart/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://badging.now.sh/static/label/Sponsor/EA4AAA?icon=sponsor)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 ```php
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
     array(
      array({MESSAGE},{COLOR})
     );
-    
-    //test example
-    //https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg
 ```
 
 ---
 
 ### Hits Example
 
-![Hits](https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg)
+![Hits](https://badging.now.sh/static/label/hits/555/888W/4c1)
 
 ```php
     //https://example.com/Hits/{USERNAME}/{PROJECT}/image.svg
@@ -44,16 +41,13 @@ The new border mode can also customize the border color, redesign and adjust the
      array('hits','555555'),
      array($count,'4C1')
     );
-    
-    //test example
-    //https://oauth.applinzi.com/Hits/yakeing/php_badge/image.svg
 ```
 
 ---
 
 ### Server Example
 
-![Server](https://oauth.applinzi.com/Server/yakeing/index/image.svg)
+![Server](https://badging.now.sh/static/label/Linux%20X86_64/555/CPU:20%25/A0ABFC/RAM:15%25/F0A010?icon=linux)
 
 ```php
     //https://example.com/Server/{USERNAME}/{PROJECT}/image.svg
@@ -62,22 +56,18 @@ The new border mode can also customize the border color, redesign and adjust the
      array('{OS}','555555'),
      array('CPU: {CPU}','A0ABFC'),
      array('RAM: {RAM}','F0A010')
-    );
-    
-    //test example
-    //https://oauth.applinzi.com/Server/yakeing/index/image.svg
-    
+    );    
 ```
 
 ---
 
 ### State Example
 
-![error](https://oauth.applinzi.com/State/error/ERROR/ed1941.svg)
-![Active](https://oauth.applinzi.com/State/rocket/Active/28a745.svg)
-![PAGES](https://oauth.applinzi.com/State/github/PAGES/ea4c89.svg)
-![thumb](https://oauth.applinzi.com/State/thumb/88888/636AD0.svg)
-![passed](https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg)
+![error](https://badging.now.sh/static/label/ERROR/ed1941?icon=error)
+![Active](https://badging.now.sh/static/label/Active/28a745?icon=rocket)
+![PAGES](https://badging.now.sh/static/label/PAGES/ea4c89?icon=github)
+![thumb](https://badging.now.sh/static/label/888W/636AD0?icon=thumb)
+![passed](https://badging.now.sh/static/label/PASSED/44CC11?icon=passed)
 
 ```php
     //https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
@@ -90,24 +80,21 @@ The new border mode can also customize the border color, redesign and adjust the
     array(
      array({MESSAGE},{COLOR})
     );
-    
-    //test example
-    //https://oauth.applinzi.com/State/passed/PASSED/44CC11.svg
 ```
 
 ---
 
 ### Label Example
 
-[![tag](https://oauth.applinzi.com/Label/tag/V4.1.0/84bf96.svg)](../../releases)
-[![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](LICENSE)
-[![size](https://oauth.applinzi.com/Label/size/999KB/b36d41.svg)](src/Badge.php/)
-[![download](https://oauth.applinzi.com/Label/download/999M/a4a61d.svg)](../../)
+[![tag](https://badging.now.sh/static/label/tag/555/V4.1.0/84bf96?icon=tag)](../../releases)
+[![license](https://badging.now.sh/static/label/license/555/MPL-2.0/FE7D37?icon=license)](LICENSE)
+[![size](https://badging.now.sh/static/label/size/555/999KB/b36d41?icon=size)](src/Badge.php/)
+[![download](https://badging.now.sh/static/label/download/555/999M/a4a61d?icon=download)](../../)
 
-[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](../../search?l=php)
-[![watch](https://oauth.applinzi.com/Label/watch/999M/28a745.svg)](../../watchers)
-[![star](https://oauth.applinzi.com/Label/star/999M/ad8b3d.svg)](../../stargazers)
-[![fork](https://oauth.applinzi.com/Label/fork/999M/9b95c9.svg)](../../network/members)
+[![languages](https://badging.now.sh/static/label/language/555/php/007EC6?icon=language)](../../search?l=php)
+[![watch](https://badging.now.sh/static/label/watch/555/999M/28a745?icon=watch)](../../watchers)
+[![star](https://badging.now.sh/static/label/star/555/999M/ad8b3d?icon=star)](../../stargazers)
+[![fork](https://badging.now.sh/static/label/fork/555/999M/9b95c9?icon=fork)](../../network/members)
 
 ```php
     //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -117,9 +104,6 @@ The new border mode can also customize the border color, redesign and adjust the
      array({LABEL},'555555'),
      array({MESSAGE},{COLOR})
     );
-    
-    //test example
-    //https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg
 ```
 
 ---
