@@ -17,8 +17,8 @@ test example:
 
 ### Sponsors Example
 
-[![Heart](https://badging.now.sh/static/label/Heart/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
-[![Sponsor](https://badging.now.sh/static/label/Sponsor/EA4AAA?icon=sponsor)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Heart](https://badging.tk/static/label/Heart/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://badging.tk/static/label/Sponsor/EA4AAA?icon=sponsor)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 ```php
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
@@ -31,7 +31,7 @@ test example:
 
 ### Hits Example
 
-![Hits](https://badging.now.sh/static/label/hits/555/888W/4c1)
+![Hits](https://badging.tk/static/label/hits/555/888W/4c1)
 
 ```php
     //https://example.com/Hits/{USERNAME}/{PROJECT}/image.svg
@@ -47,7 +47,7 @@ test example:
 
 ### Server Example
 
-![Server](https://badging.now.sh/static/label/Linux%20X86_64/555/CPU:20%25/A0ABFC/RAM:15%25/F0A010?icon=linux)
+![Server](https://badging.tk/static/label/Linux%20X86_64/555/CPU:20%25/A0ABFC/RAM:15%25/F0A010?icon=linux)
 
 ```php
     //https://example.com/Server/{USERNAME}/{PROJECT}/image.svg
@@ -63,11 +63,11 @@ test example:
 
 ### State Example
 
-![error](https://badging.now.sh/static/label/ERROR/ed1941?icon=error)
-![Active](https://badging.now.sh/static/label/Active/28a745?icon=rocket)
-![PAGES](https://badging.now.sh/static/label/PAGES/ea4c89?icon=github)
-![thumb](https://badging.now.sh/static/label/888W/636AD0?icon=thumb)
-![passed](https://badging.now.sh/static/label/PASSED/44CC11?icon=passed)
+![error](https://badging.tk/static/label/ERROR/ed1941?icon=error)
+![Active](https://badging.tk/static/label/Active/28a745?icon=rocket)
+![PAGES](https://badging.tk/static/label/PAGES/ea4c89?icon=github)
+![thumb](https://badging.tk/static/label/888W/636AD0?icon=thumb)
+![passed](https://badging.tk/static/label/PASSED/44CC11?icon=passed)
 
 ```php
     //https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
@@ -86,15 +86,15 @@ test example:
 
 ### Label Example
 
-[![tag](https://badging.now.sh/static/label/tag/555/V4.1.0/84bf96?icon=tag)](../../releases)
-[![license](https://badging.now.sh/static/label/license/555/MPL-2.0/FE7D37?icon=license)](LICENSE)
-[![size](https://badging.now.sh/static/label/size/555/999KB/b36d41?icon=size)](src/Badge.php/)
-[![download](https://badging.now.sh/static/label/download/555/999M/a4a61d?icon=download)](../../)
+[![tag](https://badging.tk/static/label/tag/555/V4.1.0/84bf96?icon=tag)](../../releases)
+[![license](https://badging.tk/static/label/license/555/MPL-2.0/FE7D37?icon=license)](LICENSE)
+[![size](https://badging.tk/static/label/size/555/999KB/b36d41?icon=size)](src/Badge.php/)
+[![download](https://badging.tk/static/label/download/555/999M/a4a61d?icon=download)](../../)
 
-[![languages](https://badging.now.sh/static/label/language/555/php/007EC6?icon=language)](../../search?l=php)
-[![watch](https://badging.now.sh/static/label/watch/555/999M/28a745?icon=watch)](../../watchers)
-[![star](https://badging.now.sh/static/label/star/555/999M/ad8b3d?icon=star)](../../stargazers)
-[![fork](https://badging.now.sh/static/label/fork/555/999M/9b95c9?icon=fork)](../../network/members)
+[![languages](https://badging.tk/static/label/language/555/php/007EC6?icon=language)](../../search?l=php)
+[![watch](https://badging.tk/static/label/watch/555/999M/28a745?icon=watch)](../../watchers)
+[![star](https://badging.tk/static/label/star/555/999M/ad8b3d?icon=star)](../../stargazers)
+[![fork](https://badging.tk/static/label/fork/555/999M/9b95c9?icon=fork)](../../network/members)
 
 ```php
     //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -123,8 +123,8 @@ test example:
 
 ### Github badge
 
-[![Downloads](https://badging.now.sh/github/downloads/yakeing/php_badge?icon=github)](../../)
-[![Size](https://badging.now.sh/github/size/yakeing/php_badge?icon=github)](src)
+[![Downloads](https://badging.tk/github/downloads/yakeing/php_badge?icon=github)](../../)
+[![Size](https://badging.tk/github/size/yakeing/php_badge?icon=github)](src)
 
 ### Installation
 
@@ -155,7 +155,7 @@ Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/php_
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://badging.now.sh/static/label/Sponsor/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://badging.tk/static/label/Sponsor/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 Author
 ---
