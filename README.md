@@ -11,7 +11,7 @@ The new border mode can also customize the border color, redesign and adjust the
 
 test example:
 ```php
-    https://badging.now.sh
+    https://org.vercel.app
 ```
 
 
