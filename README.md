@@ -17,8 +17,8 @@ test example:
 
 ### Sponsors Example
 
-[![Heart](https://badging.vercel.app/static/Heart/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
-[![Sponsor](https://badging.vercel.app/static/Sponsor/EA4AAA?icon=sponsor)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Heart](https://4.vercel.app/static/Heart/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://4.vercel.app/static/Sponsor/EA4AAA?icon=sponsor)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 ```php
     $Badge->Icon = file_get_contents({LOGO}); //<path d="M23....." fill="#FFF"></path>
@@ -31,7 +31,7 @@ test example:
 
 ### Hits Example
 
-![Hits](https://badging.vercel.app/static/hits/555/888W/4c1)
+![Hits](https://4.vercel.app/static/hits/555/888W/4c1)
 
 ```php
     //https://example.com/Hits/{USERNAME}/{PROJECT}/image.svg
@@ -47,7 +47,7 @@ test example:
 
 ### Server Example
 
-![Server](https://badging.vercel.app/static/Linux%20X86_64/555/CPU:20%25/A0ABFC/RAM:15%25/F0A010?icon=linux)
+![Server](https://4.vercel.app/static/Linux%20X86_64/555/CPU:20%25/A0ABFC/RAM:15%25/F0A010?icon=linux)
 
 ```php
     //https://example.com/Server/{USERNAME}/{PROJECT}/image.svg
@@ -63,11 +63,11 @@ test example:
 
 ### State Example
 
-![error](https://badging.vercel.app/static/ERROR/ed1941?icon=error)
-![Active](https://badging.vercel.app/static/Active/28a745?icon=rocket)
-![PAGES](https://badging.vercel.app/static/PAGES/ea4c89?icon=github)
-![thumb](https://badging.vercel.app/static/888W/636AD0?icon=thumb)
-![passed](https://badging.vercel.app/static/PASSED/44CC11?icon=passed)
+![error](https://4.vercel.app/static/ERROR/ed1941?icon=error)
+![Active](https://4.vercel.app/static/Active/28a745?icon=rocket)
+![PAGES](https://4.vercel.app/static/PAGES/ea4c89?icon=github)
+![thumb](https://4.vercel.app/static/888W/636AD0?icon=thumb)
+![passed](https://4.vercel.app/static/PASSED/44CC11?icon=passed)
 
 ```php
     //https://example.com/Label/{LOGO}/{MESSAGE}/{COLOR}.svg
@@ -86,15 +86,15 @@ test example:
 
 ### Label Example
 
-[![tag](https://badging.vercel.app/static/tag/555/V4.1.0/84bf96?icon=tag)](../../releases)
-[![license](https://badging.vercel.app/static/license/555/MPL-2.0/FE7D37?icon=license)](LICENSE)
-[![size](https://badging.vercel.app/static/size/555/999KB/b36d41?icon=size)](src/Badge.php/)
-[![download](https://badging.vercel.app/static/download/555/999M/a4a61d?icon=download)](../../)
+[![tag](https://4.vercel.app/static/tag/555/V4.1.0/84bf96?icon=tag)](../../releases)
+[![license](https://4.vercel.app/static/license/555/MPL-2.0/FE7D37?icon=license)](LICENSE)
+[![size](https://4.vercel.app/static/size/555/999KB/b36d41?icon=size)](src/Badge.php/)
+[![download](https://4.vercel.app/static/download/555/999M/a4a61d?icon=download)](../../)
 
-[![languages](https://badging.vercel.app/static/language/555/php/007EC6?icon=language)](../../search?l=php)
-[![watch](https://badging.vercel.app/static/watch/555/999M/28a745?icon=watch)](../../watchers)
-[![star](https://badging.vercel.app/static/star/555/999M/ad8b3d?icon=star)](../../stargazers)
-[![fork](https://badging.vercel.app/static/fork/555/999M/9b95c9?icon=fork)](../../network/members)
+[![languages](https://4.vercel.app/static/language/555/php/007EC6?icon=language)](../../search?l=php)
+[![watch](https://4.vercel.app/static/watch/555/999M/28a745?icon=watch)](../../watchers)
+[![star](https://4.vercel.app/static/star/555/999M/ad8b3d?icon=star)](../../stargazers)
+[![fork](https://4.vercel.app/static/fork/555/999M/9b95c9?icon=fork)](../../network/members)
 
 ```php
     //https://example.com/Label/{LABEL}/{MESSAGE}/{COLOR}.svg
@@ -123,8 +123,8 @@ test example:
 
 ### Github badge
 
-[![Downloads](https://badging.vercel.app/github/downloads/yakeing/php_badge?icon=github)](../../)
-[![Size](https://badging.vercel.app/github/size/yakeing/php_badge?icon=github)](src)
+[![Downloads](https://4.vercel.app/github/downloads/yakeing/php_badge?icon=github)](../../)
+[![Size](https://4.vercel.app/github/size/yakeing/php_badge?icon=github)](src)
 
 ### Installation
 
@@ -155,7 +155,7 @@ Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/php_
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://badging.vercel.app/static/Sponsor/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+[![Sponsor](https://4.vercel.app/static/Sponsor/EA4AAA?icon=heart)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 Author
 ---
